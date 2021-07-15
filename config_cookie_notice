@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#This script configure Magento cookie notice on VSI Magento2
+
+php bin/magento config:set cookienotice/content/custom_message "Este site usa cookies para garantir que você obtenha a melhor experiência do usuário em nosso site"
+php bin/magento config:set cookienotice/content/model_title "Aviso de Cookie"
+php bin/magento config:set cookienotice/content/custom_accept "Aceitar"
+php bin/magento config:set cookienotice/content/custom_close "Fechar"
+php bin/magento config:set cookienotice/content/custom_more_info "Mais Informações"
+php bin/magento config:set cookienotice/popup_style/font_family   unset
+php bin/magento config:set cookienotice/popup_style/model_text_align   left
+php bin/magento config:set cookienotice/popup_style/model_title_size   14
+php bin/magento config:set cookienotice/popup_style/model_message_size   14
+php bin/magento config:set cookienotice/popup_style/model_border   1
+php bin/magento config:set cookienotice/popup_style/continer_top_border   1
+php bin/magento config:set cookienotice/popup_style/container_bottom_border   1
+php bin/magento config:set cookienotice/popup_style/header_bottom_border_color   "#005C5C"
+php bin/magento config:set cookienotice/popup_style/footer_top_border_color   "#005C5C"
+php bin/magento config:set cookienotice/popup_style/header_background_color   "#EDF0EF"
+php bin/magento config:set cookienotice/popup_style/header_font_color   "#000000"
+php bin/magento config:set cookienotice/popup_style/accept_button_background_color   "#009999"
+php bin/magento config:set cookienotice/popup_style/close_button_background_color   "#009999"
+php bin/magento config:set cookienotice/popup_style/policy_button_background_color   "#009999"
+php bin/magento config:set cookienotice/popup_style/close_button_color   "#FFFFFF"
+php bin/magento config:set cookienotice/popup_style/privace_policy_color   "#FFFFFF"
+php bin/magento config:set cookienotice/popup_style/accept_button_color   "#FFFFFF"
+php bin/magento config:set cookienotice/popup_style/model_title_color   "#000000"
