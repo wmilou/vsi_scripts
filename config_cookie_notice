@@ -7,6 +7,8 @@ php bin/magento config:set cookienotice/content/model_title "Aviso de Cookie"
 php bin/magento config:set cookienotice/content/custom_accept "Aceitar"
 php bin/magento config:set cookienotice/content/custom_close "Fechar"
 php bin/magento config:set cookienotice/content/custom_more_info "Mais Informações"
+php bin/magento config:set cookienotice/general/bar_position v-bottom
+php bin/magento config:set cookienotice/content/show custom
 php bin/magento config:set cookienotice/popup_style/font_family   unset
 php bin/magento config:set cookienotice/popup_style/model_text_align   left
 php bin/magento config:set cookienotice/popup_style/model_title_size   14
