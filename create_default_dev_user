@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# this bash script create user on dev default on magento 2 VSI
-echo 'php bin/magento admin:user:create --admin-user="'$1'" --admin-password="'$2'" --admin-email="brenno.paiva@vinhasoft.com.br" --admin-firstname="dev_vinha" --admin-lastname="dev_vinha" '
+# This bash script create user on dev default on magento 2 VSI
+bash <(echo 'php bin/magento admin:user:create --admin-user="'$1'" --admin-password="'$2'" --admin-email="brenno.paiva@vinhasoft.com.br" --admin-firstname="dev_vinha" --admin-lastname="dev_vinha" ')
