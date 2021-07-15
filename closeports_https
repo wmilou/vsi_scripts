@@ -1,0 +1,7 @@
+sudo ufw disable
+yes | sudo ufw reset
+sudo ufw default deny outgoing
+sudo ufw allow https
+sudo ufw allow ssh
+sudo ufw allow smtp
+yes | sudo ufw enable
