@@ -5,6 +5,8 @@ curl -s https://raw.githubusercontent.com/wmilou/vsi_scripts/main/script_start_c
 
 echo "Seting permissions"
 chmod +x /opt/script_start_cron
+
+
 echo "Instaling Cron ..."
 line="0 3 * * sat /bin/sh /opt/script_start_cron" 
 (crontab -l; echo "$line" ) | crontab -
