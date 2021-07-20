@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Downloading into /opt/scritp_start_cron ..."
+curl -s https://raw.githubusercontent.com/wmilou/vsi_scripts/main/script_start_cron > /opt/script_start_cron 
+
+
+echo "Instaling Cron ..."
+line="0 3 * * sat /bin/sh /opt/script_start_cron" 
+(crontab -l; echo "$line" ) | crontab -
+
+echo "Instaled with Success ..."
