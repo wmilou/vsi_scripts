@@ -5,7 +5,7 @@ cd /var/www/html
 
 # Comando to gen pass
 echo "Generating Pass ..."
-pass=$(gpg --gen-random --armor 1 9)
+pass=1$(gpg --gen-random --armor 1 9)
 
 # Download bin/mage powerfull mode
 echo "Creating new user vsi_cliente ..."
